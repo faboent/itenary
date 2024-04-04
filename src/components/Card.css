@@ -1,0 +1,52 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 270px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+@media (max-width: 1020px) {
+    .card {
+        width: 100%; /* Make card width 100% of its container */
+        max-width: 400px; /* Limit maximum width to 400px */
+        margin-bottom: 30px;
+    }
+}
+
+  
+  .card p {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+
+  .main-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+@media (max-width: 1020px) {
+    .main-card {
+        flex-direction: column;
+        align-items: stretch; /* Ensures items stretch to full width in column layout */
+    }
+}
